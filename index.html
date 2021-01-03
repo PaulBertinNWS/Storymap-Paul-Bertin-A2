@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="style.css">
+        
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+
+
+     
+
+        
+        <title>Carte</title>
+    </head>
+    <body>
+
+
+        <header>
+            <div class="header-banner">
+                <img src="image/logosurftrip.png" alt="">
+            </div>
+            <div class="clear"></div>
+        
+        </header>
+
+        <div id="bg"></div>
+
+        
+             
+        <section class="content"> 
+            <article>
+                <h1 class="content-h1"> La chasse des plus belles vagues de France </h1>
+                <p><img src="/image/guille-pozzi-I7KxlZnp5og-unsplash.jpg"></p>
+                <h2>Depuis la Normandie jusqu’au Pays Basque, La France regorge d’endroits aux paysages sauvages. Mais surtout, on y trouve les plus belles vagues d’Europe sur lesquelles surfer.</h2>
+
+            </article>
+
+        </section> 
+
+        <Article> 
+        <div id='map' style='width: 900px; height: 500px;'></div>
+        <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoicGJlcnRpbiIsImEiOiJja2poMXMxamgweGN6MzFudnIzaGFnNjRmIn0.8gHjbilSqLzL9LZwSQwGEg';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/pbertin/ckjh0igrdoozz19qk79drqxq6', // stylesheet location
+        center: [-0.005486, 46.306863], // starting position [lng, lat]
+        zoom: 5 // starting zoom
+        });
+        </script>
+        </Article>
+
+            
+      
+
+          <article>
+              <h1>En Nouvelle Aquitaine</h1>
+
+              <h2>1- Le Cap ferret</h2>
+              <p>Situé au nord du bassin d’Arcachon (Gironde), le Cap Ferret offre 25 kilomètres de côte et de plages de sable. Ce sont autant d’endroits où venir avec sa planche. La presqu’île du Cap Ferret offre ses meilleures vagues le long de la Côte d’Argent.</p>
+              <h2>2- Hossegor</h2>
+              <p>Située dans les Landes, Hossegor est l’un des spots de surf de France les plus emblématiques. On y trouve les plus grandes stars de la planche. Les plages du Nord et de la Gravière accueillent des compétitions internationales. D’impressionnantes vagues y déferlent, ce qui fait de ce spot un lieu destiné aux surfeurs confirmés.</p>
+              <h2>3- Lacanau-Océan</h2>
+              <p>De notoriété mondiale, les plages de Lacanau offrent plusieurs spots de surf aux vagues changeantes. La Barrière, le Lion, Jah Point, L’Écureuil, la Sud, la Centrale, la Nord, l’Alexandre</p>
+              <h2>4- Anglet</h2>
+              <p>Sur les plages d’Anglet, s’étalent 11 spots le long d’une bande de 4,5 kilomètres de sable. Dans le pays basque, le surf s’apparente à une institution : on y aime le surf pour apprécier la beauté naturelle de l’océan. Le plus connu est la Petite Chambre d’Amour.</p>
+              <h2>5- Guéthary</h2>
+              <p>Le long de la côte basque, entre Biarritz et Saint-Jean-de-Luz, la plage de Guéthary est un spot de surf emblématique. C’est là que l’on trouverait les plus grosses vagues de France !</p>
+              <h2>6- La Côte Basques</h2>
+              <p>Situé à proximité du centre-ville de Biarritz, cet endroit mythique figure parmi les immanquables des spots de surf de France. Berceau du surf, Biarritz est mouillée par des vagues abordables par tous les niveaux.</p>
+              <h2>7- Les Estagnots</h2>
+              <p>Situé sur la commune de Seignosse, le spot des Estagnots figure parmi les incontournables de la côte atlantique sud. Le spot des Estagnots offre des vagues tubulaires – des barrels, dans le jargon – parmi les plus longs de la côte atlantique</p>
+          </article>
+   
+
+          <article>
+              <h1>En Bretagne</h1>
+
+              <h2>8- La Torche</h2>
+              <p>Haut-lieu du surf en Bretagne, La Torche (Finistère) offre de superbes vagues. Ce spot s’étire sur une longue plage de sable, avec des vagues incessantes. La houle y est très présente.</p>
+              <h2>9- La Mauvaise Grève</h2>
+              <p>La Mauvaise Grève, située à Moguérec sur la commune de Sibiril, est réservée aux intermédiaires et confirmés. Les vagues déferlent et se brisent sur le sable à marée basse : on dit que c’est un beach break.</p>
+              <h2>10- Les Blanc-Sablons</h2>
+              <p>Ce spot de surf situé au Conquet (Finistère) est accessible à tous. C’est un beach break agréable où surfer avec de belles vagues grâce à la houle de nord/nord-ouest. La meilleure période est entre l’automne et le printemps. </p>
+              <h2>11- Lostmarc'h</h2>
+              <p>Cap sur la presqu’île de Crozon pour trouver ce spot de surf. A Morgat, le spot de Lostmarc’h est l’un des plus beaux de Bretagne. Les vagues s’élèvent parfois jusqu’à 3,50 mètres de haut.</p>
+              <h2>12- Perros-Guirec</h2>
+              <p>Parmi les meilleurs spots de surf de France, on trouve bien-sûr celui de Perros-Guirec. Accessible à tous en principe, les débutants devront toutefois redoubler de prudence. Car les courants peuvent être importants. A marée montante, on peut s’y entraîner en douceur, avec de belles vagues de l’automne au printemps.</p>
+              <h2>La Baie des Trépassés</h2>
+              <p>A Lescoff, sur la Pointe du Raz (Finistère), la Baie des Trépassés est l’un des meilleurs spots de surf de France. De grands rouleaux y meurent sur le sable sans discontinuer. Les meilleures conditions se rencontrent de l’automne au printemps, par vent de nord/nord-ouest. Ce spot se destine aux intermédiaires et confirmés.</p>
+
+          </article>
+
+          <article>
+              <h1>En Normandie</h1>
+              <h2>13- Etretat</h2>
+              <p>Surfer au pied de la majestueuse arche de craie d’Etretat est une expérience à vivre à tout prix. L’environnement exceptionnel s’admire sans modération. En revanche, l’inconvénient de ce spot est qu’il est petit et ce n’est pas évident de faire sa place car les locaux ne font pas de cadeau. Non pas qu’ils soient hargneux mais c’est le spot de surf du département avec les plus belles vagues et comme les sessions ne sont pas fréquentes, ils ont de l’énergie à revendre !</p>
+              <h2>14- Hatainville</h2>
+              <p>Au nord de Barneville-Carteret (Manche), se trouve une vaste plage de sable, adossée aux dunes, typiques du Cotentin. Ce spot de surf gagnerait à être mieux connu : au crépuscule, le couchant qui embrase la mer vous en mettra plein la vue. Selon les marées, les vagues sont plus ou moins puissantes, mais attention, le courant peut être fort.</p>
+              <h2>15- Langrune-sur-Mer</h2>
+              <p>La plage de Langrune-sur-Mer, au nord de Caen (Calvados), est l’un des meilleurs spots de surf en Normandie. Par vent de nord-est et à marée descendante, les vagues se lèvent au large pour votre grand plaisir. Le site est peu connu et pourtant, on a toujours pied même à 500 mètres du rivage.</p>
+             
+          </article>
+        
+
+
+
+            <div id="mapid"></div>
+    </body>
+</html>
